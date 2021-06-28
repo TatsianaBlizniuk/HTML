@@ -1,0 +1,161 @@
+﻿<html>
+<head>
+<style>
+#tab1
+{
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+width:500px;
+border-collapse:collapse;
+border-style:solid;
+border-width:1px;
+}
+#tab1 td
+{
+border-style:solid;
+border-width:1px;
+}
+#hed td
+{
+font-weight:bold;
+background-color:#009064;
+}
+</style>
+</head>
+<body>
+<p>Во внешнем файле <b>secreet.js</b> заданны несколько переменных с определенными значениями. <br /><br />Ниже задана <b>таблица с условиями</b> 
+на которые Вы должны проверить значения переменных в файле secreet.js. Если условие истино, то буква соответствующая ему является частью <b>ключевого слова</b>.<br /><br />
+Подключите файл и напишите скрипт, который выведет это ключевое слово используя условные конструкции.</p><br />
+<table id='tab1'>
+<tr id='hed'>
+<td>Номер</td>
+<td>Условие</td>
+<td>Буква</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Равна ли переменная var1 25</td>
+<td>А</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Больше ли переменная var1 15</td>
+<td>Ж</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Меньше ли переменная var1 33</td>
+<td>К</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Равна ли переменная var2 10</td>
+<td>А</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Равна ли сумма переменных var1 и var2 30</td>
+<td>Д</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Равна ли разность переменных var2 и var1 7</td>
+<td>Ш</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Меньше ли переменная var3 чем 6</td>
+<td>М</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Равна ли переменная var3 8, и сумма переменных var1 и var2 17</td>
+<td>З</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Равна ли разность переменных var3 и var2 сумме переменных var1 и var2</td>
+<td>Н</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Равна ли переменная var4 сумме переменных var1 var2 и var3</td>
+<td>А</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Больше ли переменная var4 разности var2 и var3 умноженной на 4</td>
+<td>Н</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Равна ли переменная var5 переменной var1 умноженной на 4 </td>
+<td>Б</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Равна ли переменная var5 переменной var2 умноженной на 3</td>
+<td>Ь</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Больше ли сумма переменных var1, var2, var3, var4, var5 деленная на 3 чем 60</td>
+<td>К</td>
+</tr>
+</table>
+<p>Ключевое слово: </p>
+<script src='secreet.js'></script>
+<script>
+//Пример кода для первого условия:
+let text;
+if (var1==25)
+text+=А;
+   //document.write('A');
+
+if (var1>15)
+text+=Ж;
+   //document.write('Ж');
+   
+if (var1<33)
+   document.write('К'); 
+   
+if (var2==10)
+   document.write('А');   //4
+   
+if (var1+var2==30)
+   document.write('Д');   //5
+   
+if (var2-var1==7)
+   document.write('Ш');   //6   
+   
+if (var3<6)
+   document.write('М');         //7   
+   
+if (var3==8&&var1+var2==17)
+   document.write('З');         //8  
+
+if ((var3-var2)==(var1+var2))
+   document.write('Н');         //9
+
+if (var4==(var1+var2+var3))
+   document.write('А');         //10
+
+if (var4>(var2-var3)*4)
+   document.write('Н');         //11
+
+if (var5==(var1*4))
+   document.write('Н');         //12
+
+if (var5==var2*3)
+   document.write('Ь');         //13
+  
+if ((var1+var2+var3+var4+var5)/3>60)
+   document.write('К');         //14  
+   
+   
+   document.write('К');
+   
+</script>
+</body>
+</html>
