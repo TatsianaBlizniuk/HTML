@@ -1,0 +1,45 @@
+<!DOSTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Задание 3</title>
+<style>
+   .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
+  </style>
+<meta charset="utf-8">
+</head>
+<body bgcolor='b4fcdc'>
+<form name='fio'>
+<p><h2 align='center'><font color="0e6940">Бланк заказа</font></h2></p><br />
+<img src='Планшет.jpg' width='120' class="leftimg">
+<input type="text" name="f" /> - Фамилия<br />
+<p></p>
+<input type="text" name="a" /> - Адрес<br />
+<p></p>
+<input type="text" name="t" /> - Телефон<br />
+
+
+<p align='center'><b><font color="4550d0">Наши товары</font></b></p>
+<input type='checkbox' name='product' value='1' />
+<img src='Мышь.jpg' width='70'>
+<input type='checkbox' name='product' value='1' />
+<img src='Коврик.jpg' width='70'>
+<input type='checkbox' name='product' value='1' />
+<img src='Трекбол.jpg' width='70'>
+
+
+<p align='center'><b><font color="4550d0">Сумма, котрой вы располагаете</font></b></p>
+<input type='radio' name='s' value='a' />$100
+<input type='radio' name='s' value='a' />$500
+<input type='radio' name='s' value='a' />$1000
+<br /><br />
+<button type="submit" value="Отправить"> Отправить</button>
+<input type="reset" value="Сброс"></form>
+</body>
+</html>

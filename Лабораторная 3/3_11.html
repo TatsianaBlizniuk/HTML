@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: solid 1px #a6d8a8;
+    margin: auto;
+}
+</style>
+</head>
+<body>
+<h1>CSS открыть блок при нажатии JS</h1>
+
+
+<div width="100%'>
+<a href ="#box" class="flip" onclick = "openbox('box'); return false">Нажмите, чтобы показать панель </a>
+</div>
+
+<div id="box" class="flip" style = "display: none">
+  <p>Эта панель содержит элемент div, который скрыт по умолчанию (display: none).</p>
+  <p>Используем стиль CSS, с  JavaScript, чтобы показать div (display: block).</p>
+  <p>Как это работает: обратите внимание, что элемент p с class="flip" имеет атрибут onclick, прикрепленный к нему. Когда пользователь нажимает на элемент p, выполняется функция myFunction(), которая изменяет стиль div с id="panel" с display:none (hidden) на display:block (visible).</p>
+  <p>Вы узнаете больше о JavaScript, если будете работать ежедневно!</p>
+</div>
+
+<script>
+	function openbox(box) {
+	display = document.getElementById('box').style.display;
+	if(display == "none") {
+	document.getElementById('box').style.display = "block";
+	}
+	else {
+	document.getElementById('box').style.display = "none";
+	}
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOSTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Задание 5</title>
+<meta charset="utf-8">
+</head>
+<body bgcolor='fff4d8' text='maroon'>
+<img src='Фотостудия.png' width='100'  align='left'>
+<br />
+<p align='center'><font color="red" size='6'><b>Фотостудия "Шарм"</b></font></p>
+<br /><form>
+Имя заказчика:<input type="text" size="100" name="name"/><br /><br />
+Адрес:<input type="text" size="150" name="address"/><br /><br />
+Телефон:<input type="text" size="50" name="phone"/><br /><br />
+Фото:
+<input type="checkbox" name="foto" value="1"/>Цветное
+<input type="checkbox" name="foto" value="2"/>Черно-белое
+<input type="checkbox" name="foto" value="3"/>Цветной слайд<br /><br />
+Срок исполнения:
+<input type="radio" name="time" value="3"/>3 дня
+<input type="radio" name="time" value="10"/>10 дней
+<input type="radio" name="time" value="30"/>30 дней<br /><br />
+Заказ принял:
+<select  name="java-navigator" onchange="top.location.href =
+  this.options[this.selectedIndex].value;">
+
+<option selected value="#">Выберите из списка</option>
+<option value='Ivanov.php'>Иванов</option>
+<option value='Petrov.html'>Петров</option>
+<option value='Sidorov.php'>Сидоров</option>
+</select><br /><br />
+<button type="submit" value="Отправить">Отправить</button>
+<input type="reset" value="Очистить">
+
+</form>
+</body>
+</html>

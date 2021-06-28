@@ -1,0 +1,56 @@
+<!DOSTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Задание 4</title>
+<style>
+   textarea {
+    width: 90%; /* Ширина поля в процентах */
+    height: 40px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+   } 
+  </style>
+<meta charset="utf-8">
+</head>
+<body bgcolor='ffcbf2' text='maroon'>
+<h1 align='center'>Бланк заказа</h1>
+<form>
+<fieldset>
+<legend><i>Наши товары и цены</i></legend>
+<input type="checkbox" name="cost" value="1"/> Монитор 100$ <br />
+<input type="checkbox" name="cost" value="2"/> Системный блок 300$ <br />
+<input type="checkbox" name="cost" value="3"/> Мышь 20$ <br />
+<input type="checkbox" name="cost" value="4"/> Клавиатура 100$ <br />
+</fieldset>
+<fieldset>
+<legend><i>Адрес доставки</i></legend>
+Улица:<input type="text" name="st"/><br /><br />
+Дом:<input type="text" size="1" name="h"/>
+Корпус:<input type="text" size="1" name="k"/>
+Квартира:<input type="text" size="1" name="f"/>
+</fieldset>
+<fieldset>
+<legend><i>Оплата</i></legend>
+<input type="radio" name="payment" value="n"/>Наличными курьеру <br />
+<input type="radio" name="payment" value="b"/>Банковский перевод
+</fieldset>
+<fieldset>
+<legend><i>Нам важно Ваше мнение о нашем сайте!</i></legend>
+<select  name='opinion'>
+<option value='pr'>Отлично</option>
+<option value='pr'>Хорошо</option>
+<option value='pr'>Посредственно</option>
+<option value='pr'>Плохо</option>
+<option value='pr'>Очень плохо</option>
+</select>
+</fieldset>
+<fieldset>
+<legend><i>Пожелания</i></legend>
+<form name='message'>
+<textarea placeholder="Пожалуйста, напишите Ваши пожелания по работе нашей фирмы"></textarea>
+</form>
+</fieldset>
+<button type="submit" value="Отправить">Заказать</button>
+<input type="reset" value="Очистить">
+</form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+	max-width:120px;
+	max-height:120px;
+	float: left;
+	padding: 5px;
+	}
+.image	{
+	max-width:120px;
+	max-height:120px;
+	}
+.button{
+	width: 100%
+}	
+	
+
+</style>
+</head>
+<body>
+
+<h1>CSS установить скрытие и открытие блока JS</h1>
+
+<div class="box" id="box1">
+  <img src="C:\Users\37529\OneDrive\Документы\HTML\Лабораторная 3\3_14\img_fjords.jpg" class="image">
+  <button class="button" onclick = "remove()">Снять</button></p>
+</div>
+
+<div class="box" id="box2">
+  <img src="C:\Users\37529\OneDrive\Документы\HTML\Лабораторная 3\3_14\img_forest.jpg" class="image">
+  <button class="button" onclick = "hide()">Скрыть</button></p>
+</div>
+
+<div class="box" id="box3">
+  <img src="C:\Users\37529\OneDrive\Документы\HTML\Лабораторная 3\3_14\img_lights.jpg" class="image">
+  <button class="button" onclick = "ope()">Открыть</button></p>
+</div>
+
+
+<script>
+	function remove() {
+	document.getElementById('box1').style.display = "none";
+	}
+</script>
+<script>
+	function hide() {
+	document.getElementById('box2').style.visibility = "hidden";
+	}
+</script>
+<script>
+	function ope() {
+	document.getElementById('box1').style.display = "block";
+	document.getElementById('box2').style.visibility = "visible";
+	}
+</script>
+
+</body>
+</html>

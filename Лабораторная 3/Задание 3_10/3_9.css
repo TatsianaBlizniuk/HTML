@@ -1,0 +1,44 @@
+h4
+{
+color:#ed8ad9;
+font-family:Calibri;
+font-weight:18bold;
+text-align:center;
+}
+
+hr
+{
+background-color: #9e959c;
+}
+
+.headstyle
+{
+font-family:Segoe UI;
+line-height: 0.7em;	
+}
+
+h1
+{
+text-align:center;	
+font-weight: 600;
+}
+
+.poem
+{
+text-align:left;
+font-family:Calibri;	
+font-style:italic;
+line-height: 0.3em;	
+}
+
+h3
+{
+text-align:left;
+font-weight: 600;
+}
+
+h5
+{
+text-align:left;
+font-weight: 600;	
+}

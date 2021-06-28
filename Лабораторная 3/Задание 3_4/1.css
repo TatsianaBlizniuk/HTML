@@ -1,0 +1,45 @@
+body
+{background-color: #f182f3;
+}
+
+h1
+{color:#ab0526;
+text-align: center;
+font-family:Times New Roman;
+}
+
+h2
+{color:blue;
+text-align: center;
+font-family:Impact;
+}
+
+img
+{
+width:100px;
+border: 10px dotted;
+border-color: yellow green red blue;
+}
+
+P.center {
+    text-align: center; /* Выравнивание по центру картинки*/
+   }
+   
+   
+#head
+{
+background: yellow;	
+border: 3px dashed red;	
+text-align: center;
+}
+
+table{
+	border: 7px double red;
+	margin: auto;
+}
+
+td
+{
+background: yellow;	
+border: 2px solid red;
+}
